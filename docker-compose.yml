@@ -12,9 +12,7 @@ services:
       - redis
     volumes:
       - .:/rails
-      - ruby-bundle-cache:/bundle
-    links:
-      - mariadb
+      - gem_cache:/usr/local/bundle/gems
 
   mariadb:
     restart: on-failure
@@ -23,13 +21,11 @@ services:
     volumes:
       - "/var/lib/mysql/data:${MARIADB_DATA_DIR}"
       - "/var/lib/mysql/logs:${MARIADB_LOG_DIR}"
-      - /var/docker/mariadb/conf:/etc/mysql
+      - db_data:/var/lib/mysql
+      # - /var/docker/mariadb/conf:/etc/mysql
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-        # environment:
-        # MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
-        # MYSQL_DATABASE: "${MYSQL_DATABASE}"
-        # MYSQL_USER: "${MYSQL_USER}"
-        # MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+    environment:
+      MARIADB_ROOT_PASSWORD: "${DB_PASS}"
 
   redis:
     restart: on-failure
@@ -40,5 +36,5 @@ services:
       - ./tmp/redis_data:/var/lib/redis/data
 
 volumes:
-  ruby-bundle-cache:
-    external: true
+  gem_cache:
+  db_data:

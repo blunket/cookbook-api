@@ -1,0 +1,16 @@
+current directory: /home/andrew/cookbook-app/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+/usr/share/rvm/rubies/ruby-3.2.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/andrew/cookbook-app/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240820-83564-5t9wtn sitelibdir\=./.gem.20240820-83564-5t9wtn clean
+
+current directory: /home/andrew/cookbook-app/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240820-83564-5t9wtn sitelibdir\=./.gem.20240820-83564-5t9wtn
+make: Nothing to be done for 'all'.
+
+current directory: /home/andrew/cookbook-app/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240820-83564-5t9wtn sitelibdir\=./.gem.20240820-83564-5t9wtn install
+
+current directory: /home/andrew/cookbook-app/vendor/bundle/ruby/3.2.0/gems/json-2.7.2/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20240820-83564-5t9wtn sitelibdir\=./.gem.20240820-83564-5t9wtn clean

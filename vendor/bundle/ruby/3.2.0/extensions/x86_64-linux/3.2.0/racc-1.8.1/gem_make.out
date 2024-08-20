@@ -1,0 +1,18 @@
+current directory: /home/andrew/cookbook-app/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+/usr/share/rvm/rubies/ruby-3.2.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/andrew/cookbook-app/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240820-83564-7714ma sitelibdir\=./.gem.20240820-83564-7714ma clean
+
+current directory: /home/andrew/cookbook-app/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240820-83564-7714ma sitelibdir\=./.gem.20240820-83564-7714ma
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/andrew/cookbook-app/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240820-83564-7714ma sitelibdir\=./.gem.20240820-83564-7714ma install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20240820-83564-7714ma/racc
+
+current directory: /home/andrew/cookbook-app/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240820-83564-7714ma sitelibdir\=./.gem.20240820-83564-7714ma clean
